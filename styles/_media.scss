@@ -1,0 +1,148 @@
+@media screen and (max-width: 800px) {
+  .services {
+    text-align: center;
+  }
+  .service-bottom {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+
+  #services .service-bottom .service-item {
+    flex-basis: 90%;
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .hero {
+    width: 95%;
+    margin: auto;
+  }
+  #projects {
+    overflow: hidden;
+    .all-projects {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+    }
+    .item2 {
+      flex-direction: row-reverse;
+    }
+    .project-item {
+      display: flex;
+      margin-bottom: 0rem;
+      border-radius: 0;
+      overflow: hidden;
+      height: 70%;
+
+      .project-info {
+        flex: 1 1 50%;
+        border-radius: 0;
+        overflow: hidden;
+        height: 100%;
+      }
+
+      .project-img {
+        flex: 1 1 50%;
+      }
+    }
+  }
+  .contact-items {
+    justify-content: center;
+  }
+  .contact-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #about .about {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .col-right {
+      text-align: center;
+      margin: 1rem 0rem 5rem 0rem;
+      h1 {
+        text-align: center;
+      }
+      p {
+        margin: 2rem 0rem 4rem 0rem;
+      }
+    }
+  }
+  #header .nav-list {
+    span {
+      background-color: crimson;
+      padding: 0.1rem 1rem;
+      margin: 0.5rem 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+      transition: all 0.5s ease-in-out;
+    }
+
+    #check-box {
+      position: absolute;
+      height: 1.5rem;
+      top: 40%;
+      z-index: 10000;
+      opacity: 0;
+    }
+    .check-box,
+    input[type="checkbox"]:checked + ul {
+      transform: translatex(-100%);
+    }
+    ul {
+      position: absolute;
+      background-color: rgba(31, 30, 30, 0.959);
+      width: 110vw;
+      margin: auto;
+      height: 100vh;
+      left: 110%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      overflow: hidden;
+      transition: 2s ease;
+      z-index: 1;
+      a::after {
+        content: attr(data-after);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: rgba(255, 255, 255, 0.021);
+        font-size: 15rem;
+        letter-spacing: 1rem;
+        z-index: -5000;
+      }
+      a {
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 2rem;
+        display: block;
+      }
+      a:hover {
+        color: crimson;
+      }
+      li:hover a::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}

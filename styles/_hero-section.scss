@@ -1,0 +1,71 @@
+/*---hero section----*/
+
+#hero {
+  background-image: url(/img/111.jpeg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  
+  .t1 {
+    animation: text-reveal 0.5s 1.8s ease forwards;
+  
+  }
+  .t2 {
+    animation: text-reveal 0.5s 2.8s ease forwards;
+  }
+  .t3 {
+    animation: text-reveal 0.5s 3.8s ease forwards,
+      text-reveal-name 0.5s ease 3.8s forwards;
+  }
+
+  .hero {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: flex-start;
+
+    h1 {
+      display: block;
+      font-size: calc(4rem + 0.5vw);
+      position: relative;
+      color: transparent;
+      width: fit-content;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        background-color: crimson;
+      }
+    }
+    .s1 {
+      animation: text_reveal_box 1s 1s ease-in-out;
+    }
+    .s2 {
+      animation: text_reveal_box 1s 2s ease-in-out;
+    }
+    .s3 {
+      animation: text_reveal_box 1s 3s ease-in-out;
+    }
+    .cta {
+      display: inline-block;
+      border: 2px solid crimson;
+      padding: 1rem 3rem;
+      color: white;
+      background: transparent;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      margin-top: 3rem;
+      transition: 0.5s ease;
+      transition-property: padding-right, color, background-color;
+    }
+  }
+  .cta:hover {
+    color: white;
+    background-color: crimson;
+  }
+}

@@ -1,0 +1,22 @@
+/*- animations-*/
+@keyframes text_reveal_box {
+  90% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+@keyframes text-reveal {
+  100% {
+    color: black;
+  }
+}
+@keyframes text-reveal-name {
+  100% {
+    color: crimson;
+    font-weight: 900;
+  }
+}

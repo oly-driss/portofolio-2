@@ -1,0 +1,33 @@
+/*----contact section  ----*/
+.contact {
+  flex-direction: column;
+  margin-top: 1rem;
+  .contact-items {
+    display: flex;
+    margin: 0rem 4rem;
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    box-shadow: 3px 3px 10px black;
+    border-radius: 1rem;
+    margin: 10rem 2rem 5rem 2rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: calc(3rem + 1vw);
+    }
+    h2 {
+      font-size: calc(0.5rem + 1vw);
+      font-weight: 500;
+      text-align: center;
+    }
+    .icon {
+      height: 30%;
+      width: 30%;
+    }
+  }
+}
